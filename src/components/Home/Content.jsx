@@ -24,7 +24,7 @@ export const Content = () => {
               className="bg-[#0b5e66] text-white relative p-2 pl-4 pr-10 capitalize rounded-lg hover:bg-white hover:text-[#0b5e66] hover:border-[#0b5e66] border-[1px] "
             >
               shop now
-              <ArrowCircleRightIcon className="absolute right-2" />
+              <ArrowCircleRightIcon className="absolute right-2 top-2" />
             </NavLink>
           </div>
         </section>
