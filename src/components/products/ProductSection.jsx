@@ -34,7 +34,7 @@ const ProductSection = () => {
   const [activeCategory, setActiveCategory] = useState("All Products");
   const [showCategoryOptions, setShowCategoryOptions] = useState(false);
   return (
-    <div className="border-gray-600 p-2 m-auto ">
+    <div className="border-gray-600 p-2 flex flex-col items-center">
       <section className="font-semibold">
         Products :
         <span

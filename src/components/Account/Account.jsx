@@ -6,8 +6,8 @@ const Account = () => {
   const [showAccount, setShowAccount] = useState(false);
   return (
     <div
-      className="hover:cursor-pointer relative"
-      onClick={()=>setShowAccount(!showAccount)}
+      className="hover:cursor-pointer relative "
+      onClick={()=>setShowAccount(!showAccount) }
     >
       <AccountCircleIcon fontSize="large" />
       <div

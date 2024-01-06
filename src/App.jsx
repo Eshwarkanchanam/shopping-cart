@@ -5,7 +5,7 @@ import { ShoppingCartProvider } from "./context/CartContext";
 function App() {
   return (
     <ShoppingCartProvider>
-      <div className="max-w-screen-4xl min-h-[100vh] tracking-wide ">
+      <div className="max-w-screen-4xl min-h-[100vh] flex flex-col tracking-wide ">
         <Header />
         <Outlet />
         <Footer />

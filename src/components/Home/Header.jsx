@@ -13,7 +13,7 @@ export const Header = () => {
         <span className="sm:hidden ml-2">
           <Hamburger />
         </span>
-        <span>Logo</span>
+        <span className="font-bold tracking-widest">EAZZYSHOP</span>
       </span>
 
       <span className="space-x-4 hidden sm:block">
@@ -44,9 +44,9 @@ export const Header = () => {
           <li className="p-1 ">
             <Cart />
           </li>
-          <li className="p-1 ">
+          {/* <li className="p-1 ">
             <Account />
-          </li>
+          </li> */}
             
           </ul>
       </span>

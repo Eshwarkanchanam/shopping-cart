@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#053132] text-white flex flex-wrap lg:flex-start mt-10  w-full">
+    <footer className="bg-[#053132] text-white flex flex-wrap lg:flex-start mt-10  w-full ">
       <div className="m-10">
         <ul className="capitalize">
           <li className="pt-2 font-bold text-lg">information</li>
