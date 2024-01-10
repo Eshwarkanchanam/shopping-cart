@@ -24,12 +24,12 @@ const CartItem = ({ id, quantity, setTotalPrice }) => {
 
   const increaseTotalPrice = () => {
     if (currentQuantity < 10) {
-      setTotalPrice((prevTotalPrice) => prevTotalPrice + price);
+      setTotalPrice((prevTotalPrice) => (prevTotalPrice + price));
     }
   };
   const decreaseTotalPrice = () => {
     if (currentQuantity > 1) {
-      setTotalPrice((prevTotalPrice) => prevTotalPrice - price);
+      setTotalPrice((prevTotalPrice) => (prevTotalPrice - price));
     }
   };
 
@@ -45,7 +45,7 @@ const CartItem = ({ id, quantity, setTotalPrice }) => {
         <p className="text-ellipsis align-middle ">{title}</p>
       </section>
       <section className="flex items-center justify-center">
-        <span onClick={decreaseTotalPrice}>
+        <span className="m-2" onClick={decreaseTotalPrice}>
           <DecreaseCartItem
             id={id}
             quantity={currentQuantity}
@@ -54,7 +54,7 @@ const CartItem = ({ id, quantity, setTotalPrice }) => {
           />
         </span>
         <p>{currentQuantity}</p>
-        <span onClick={() => increaseTotalPrice()}>
+        <span className="m-2" onClick={() => increaseTotalPrice()}>
           <IncreaseCartItem
             id={id}
             quantity={currentQuantity}
@@ -66,7 +66,7 @@ const CartItem = ({ id, quantity, setTotalPrice }) => {
       <section className="flex items-center justify-center">
         <p className="text-xs">
           {`${price}x${currentQuantity}=`}
-          <span className="font-bold text-sm">{currentQuantity * price}</span>
+          <span className="font-bold text-sm">{(currentQuantity * price).toFixed(2)}</span>
         </p>
       </section>
       <section

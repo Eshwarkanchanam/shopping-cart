@@ -1,13 +1,18 @@
 import RemoveIcon from "@mui/icons-material/Remove";
+import { useShoppingCartContext } from "../../context/CartContext";
 
-const DecreaseCartItem = ({id,quantity,setQuantity,decreaseCartItem}) => {
+const DecreaseCartItem = ({ id, quantity, setQuantity, decreaseCartItem ,setIsItemAdded}) => {
+  const { removeCartItem } = useShoppingCartContext();
   return (
     <RemoveIcon
-      className="ml-2 mr-2 cursor-pointer text-white bg-[#0d72ea] rounded-md"
+      className="cursor-pointer text-white bg-[#0d72ea] rounded-md"
       onClick={() => {
         if (quantity > 1) {
-          decreaseCartItem(id);  
+          decreaseCartItem(id);
           setQuantity(quantity - 1);
+        } else {
+          removeCartItem(id);
+          setIsItemAdded(false);
         }
       }}
     />

@@ -10,11 +10,13 @@ import ProductSection from "./components/products/ProductSection.jsx";
 import { Products } from "./components/products/Products.jsx";
 import SingleProduct from "./components/products/SingleProduct.jsx";
 import CartPage from "./components/Cart/CartPage.jsx";
+import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement : <ErrorPage />,
     children: [
       {
         path: "/",

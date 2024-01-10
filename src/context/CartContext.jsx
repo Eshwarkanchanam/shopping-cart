@@ -44,7 +44,7 @@ export const ShoppingCartProvider = ({ children }) => {
   }
   
 
-  console.log(cartItems);
+  // console.log(cartItems);
 
   return (
     <CartContext.Provider
